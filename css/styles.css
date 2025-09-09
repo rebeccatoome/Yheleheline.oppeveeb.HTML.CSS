@@ -1,3 +1,32 @@
+
+body, html {
+  overflow: auto;
+}
+.icon {
+  width: 48px;
+  height: 48px;
+  color: #007bff; /* change color as you want */
+  cursor: pointer; /* optional, for hover effect */
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: #0056b3; /* darker on hover */
+}
+.icon {
+  width: 24px !important;
+  height: 24px !important;
+  color: red;
+  border: 1px solid white;
+}
+.icon {
+  width: 24px !important;
+  height: 24px !important;
+  color: black;
+  border: 1px solid white;
+}
+
+
 img {
         width: 180px;
         height: 180px;
