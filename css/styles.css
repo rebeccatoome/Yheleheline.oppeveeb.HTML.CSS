@@ -1,49 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-body, html {
+body {
+  margin: 0;
+}
+
+body,
+html {
   overflow: auto;
 }
+
+.icon-row {
+  background-color: white;
+  display: flex;
+  gap: 15px;
+  padding: 10px 0;
+}
 .icon {
-  width: 48px;
-  height: 48px;
-  color: #007bff; /* change color as you want */
-  cursor: pointer; /* optional, for hover effect */
+  width: 24px;
+  height: 24px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
   transition: color 0.3s;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
 }
-
 .icon:hover {
-  color: #0056b3; /* darker on hover */
+  color: #0056b3;
 }
-.icon {
-  width: 24px !important;
-  height: 24px !important;
-  color: red;
-  border: 1px solid white;
-}
-.icon {
-  width: 24px !important;
-  height: 24px !important;
-  color: black;
-  border: 1px solid white;
-}
-
 
 img {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-        float: left;
-        margin-right: 10px;
-        object-fit: cover;
-        object-position: center top;
-        transform: scale(1.0);
-      }
-      .username {
-        font-weight: bold;
-      }
-      .hero-image {
-        width: 100%;
-        height: 35vh;
-        border-radius: 0;
-        object-fit: cover;
-        object-position: center;
-        }
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.hero-image {
+  max-width: 100% !important;
+  width: 100% !important;
+  height: 300px !important;
+}
+
+.image-links img {
+  width: 150px !important;
+  max-width: 500px !important;
+  height: 0 auto !important;
+  margin-right: 10px !important;
+  display: inline-block !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.icon {
+  color: black; /* Or any visible color */
+  width: 24px;
+  height: 24px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
