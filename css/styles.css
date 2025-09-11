@@ -1,3 +1,7 @@
+body {
+  font-size: 20px;
+}
+
 .wrap-text {
   width: 1000px; /* Set a width so wrapping can happen */
   white-space: normal; /* Make sure wrapping is allowed */
