@@ -74,8 +74,8 @@ img {
   display: inline-block !important;
   flex-wrap: wrap !important;
   gap: 10px !important;
-  object-fit: cover !important;
-  border-radius: 50% !important;
+  object-fit: contain !important;
+  border-radius: 25% !important;
 }
 
 .video-container {
