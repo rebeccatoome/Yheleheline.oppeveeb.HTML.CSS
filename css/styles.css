@@ -51,8 +51,8 @@ img {
 }
 
 .profile-pic {
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   float: left;
   margin-right: 10px;
@@ -79,7 +79,14 @@ img {
   flex-wrap: wrap !important;
   gap: 10px !important;
   object-fit: contain !important;
-  border-radius: 25% !important;
+  border-radius: 20% !important;
+}
+a img {
+  border: 0;
+  display: block;
+}
+a {
+  text-decoration: none;
 }
 
 .video-container {
@@ -88,10 +95,25 @@ img {
   height: 0;
   overflow: hidden;
   max-width: 100%;
+  margin-top: 10px; /* Moves video down */
+  margin-bottom: 40px; /* Moves video up from what's below it */
+}
+
+.video-container iframe {
+  position: absolute;
+}
+
+.text-content {
+  margin-top: 50px; /* Moves the text down */
 }
 
 .icon {
   color: black; /* Or any visible color */
   width: 24px;
   height: 24px;
+}
+
+.content-below-header {
+  margin-top: 4rem; /* või mingi sobiv väärtus, nt 60px */
+  /* margin-top liigutab kogu selle sektsiooni headerist allapoole */
 }
