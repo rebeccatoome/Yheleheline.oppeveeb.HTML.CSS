@@ -1,5 +1,6 @@
 body {
   font-size: 20px;
+  margin: 0%;
 }
 
 .wrap-text {
@@ -9,14 +10,24 @@ body {
   overflow-wrap: break-word; /* Modern alternative, more supported */
 }
 
+ul {
+  list-style-type: disc; /* default bullet */
+  margin-left: 20px; /* indent */
+}
+ul.circle {
+  list-style-type: circle; /* hollow circle bullets */
+}
+
+.move-up {
+  background-color: transparent; /* testvärv */
+  margin-top: 100px;
+  transform: translateY(-800px); /* moves it up */
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-body {
-  margin: 0;
 }
 
 body,
@@ -113,7 +124,39 @@ a {
   height: 24px;
 }
 
-.content-below-header {
-  margin-top: 4rem; /* või mingi sobiv väärtus, nt 60px */
-  /* margin-top liigutab kogu selle sektsiooni headerist allapoole */
+/* ID-selektor */
+#kontakt {
+  background-color: #f9f9f9;
+}
+
+/* Atribuudiselektor */
+a[target="_blank"] {
+  color: #0077cc;
+}
+
+/* Grid */
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Murdpunkt RWD jaoks */
+@media (min-width: 768px) {
+  .icon-row {
+    gap: 30px;
+  }
+}
+
+/* Focus nähtavus */
+a:focus-visible {
+  outline: 2px dashed #000;
+}
+
+/* rem/em näited */
+h1 {
+  font-size: 2rem;
+}
+section {
+  padding: 1.5em;
 }
