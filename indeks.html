@@ -1,3 +1,11 @@
+<header>
+<div class="hero-wrapper">
+<picture>
+<source srcset="images/Hiina.avif" type="image/avif" />
+<img src="images/Hiina.avif" alt="Hiina image" class="hero-image"/>
+</picture>
+</div>
+
 <!DOCTYPE html>
 <html lang="et">
   <head>
@@ -15,6 +23,8 @@
         <a href="#HTML">HTML</a>
         <a href="#CSS">CSS</a>
         <a href="#kontakt">Kontakt</a>
+        <a href="#HTML õppevideo">HTML õppevideo</a>
+        <a href="#Veebilehe-skelett">Veebilehe skelett</a>
       </nav>
     </header>
 
@@ -70,56 +80,34 @@
           </svg>
         </div>
 
-        <picture>
-          <source srcset="images/Hiina.avif" type="image/avif" />
-          <img src="images/Hiina.avif" alt="Hiina image" class="hero-image" />
-        </picture>
 
         <div style="height: 20px;"></div> 
 
-        <div class="image-links">
-          <a
-            href="https://unsplash.com/photos/a-vase-filled-with-pink-flowers-on-top-of-a-table-5soAUDDnS74"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1716335024740-5fec88af5a05?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Pink flowers in vase"
-            /> </a
-          ><a
-            href="https://unsplash.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx
-    waG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Unsplash example"
-              loading="lazy"
-            />
-          </a>
-        </div>
-      </section>
-
       <section id="sissejuhatus">
-        <h2>Sissejuhatus</h2>
-        <p>Mis on HTML?</p>
-        <div class="wrap-text">
-        <p>
-        HTML ehk HyperText Markup Language on veebilehtede struktureerimisekeel. See ei ole programmeerimiskeel,
-        <ul style="margin-left: 0%;">
-         vaid märgendikeel, mis määrab ära, kuidas sisu (nt tekst, pildid, lingid, tabelid jms) veebilehel kuvatakse.
-         </ul> 
-         <p>HTML-i põhiülesanded:</p>
-         <ul style="list-style-type: disc; margin-left: 20px;">
-         <li>Määrata, mis tüüpi sisu on (nt
-         pealkiri, lõik, link, pilt).</li>
-         <li>Struktureerida sisu loogiliselt (nt
-        päised, jalused, sektsioonid).</li>
-         </ul>
-        </div>
-      </section>
+  <h2>Sissejuhatus</h2>
+  <div class="wrap-text">
+    <p>
+      See veebisait on loodud eelkõige isiklikuks õppevahendiks, et aidata mul endal paremini mõista ja omandada HTML-i ja CSS-i põhialuseid. Veebiarendus võib esmapilgul tunduda keeruline ja infoküllane, kuid selle lehe kaudu olen püüdnud koondada kõige olulisema selgel ja lihtsustatud kujul.
+    </p>
+    <p>
+      Veebilehelt leiab erinevaid osi jaotatuna teemade kaupa – igas sektsioonis on lühikesed kirjeldused, loetelud, koodinäited ning valitud pildid ja videod, mis aitavad keerulisemaid mõisteid paremini mõista. Visuaalsed näited ja struktuurne ülesehitus loovad parema seose teooria ja praktilise rakendamise vahel.
+    </p>
+    <p>
+      Videote kaudu saad jälgida samm-sammult, kuidas HTML-i ja CSS-i kasutatakse reaalses töös, ning teksti kaudu on võimalik rahulikult süveneda igasse teemasse eraldi. Kõik see aitab kaasa sellele, et mõista mitte ainult <em>mida</em> need tehnoloogiad teevad, vaid ka <em>kuidas</em> neid ise kasutada.
+    </p>
+
+    <p><strong>Läbi selle õppeveebi saab:</strong></p>
+    <ul style="list-style-type: disc; margin-left: 20px;">
+      <li>Tutvuda HTML-i ja CSS-i põhialustega</li>
+      <li>Vaadata õpetlikke videoid ja näiteid</li>
+      <li>Õppida läbi lihtsate ja visuaalsete seletuste</li>
+      <li>Alustada omaenda veebilehe loomisega</li>
+    </ul>
+  </div>
+</section>
+
+
+
       <div style="height: 20px;"></div>
 
       <section id="HTML">
@@ -132,7 +120,7 @@
         <ul style="margin-left: 0%;">
          vaid märgendikeel, mis määrab ära, kuidas sisu (nt tekst, pildid, lingid, tabelid jms) veebilehel kuvatakse.
          </ul> 
-         <p>HTML-i põhiülesanded:</p>
+         <p> <strong>HTML-i põhiülesanded:</strong></p>
          <ul style="list-style-type: disc; margin-left: 20px;">
          <li>Määrata, mis tüüpi sisu on (nt
          pealkiri, lõik, link, pilt).</li>
@@ -177,26 +165,70 @@
 
         <div style="height: 20px;"></div> 
 
-        <section class="move-up">
-        <h2>Teooria</h2>
-        <p>Mis on HTML?</p>
+        <section id="Veebilehe-skelett" class="move-up">
+       <h2>Veebilehe skelett</h2>
+<div class="wrap-text">
+  <pre><code>
+&lt;!doctype html&gt;
+&lt;html lang="et"&gt;
+  &lt;head&gt;
+    &lt;!-- meta andmed, pealkiri, lingid --&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- nähtav sisu --&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+  </code></pre>
+</div>
+       <div class="wrap-text">
+  <p>
+    <code>&lt;html lang="et"&gt;</code> määrab dokumendi alguse ja keele, mis aitab otsimootoritel ja ekraanilugejatel sisu mõista. Päisesse (<code>&lt;head&gt;</code>) käib:
+  </p>
+  <ul style="list-style-type: disc; margin-left: 20px;">
+    <li>
+      <code>&lt;meta charset="utf-8"&gt;</code> – määrab, et tekst on UTF-8 kodeeringus (õiged täpitähed).
+    </li>
+    <li>
+      <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code> – seab mobiilse seadme vaate laiuse ja skaala õigeks.
+    </li>
+    <li>
+      <code>&lt;title&gt;</code> – lehe nimi, mis kuvatakse brauseri sakil.
+    </li>
+    <li>
+      <code>&lt;link rel="stylesheet" href="assets/css/style.css"&gt;</code> – viide välisele CSS-failile.
+    </li>
+  </ul>
+</div>
+ 
 
-        <div class="wrap-text">
-        <p>
-        HTML ehk HyperText Markup Language on veebilehtede struktureerimisekeel. See ei ole programmeerimiskeel,
-         vaid märgendikeel, mis määrab ära, kuidas sisu (nt tekst, pildid, lingid, tabelid jms) veebilehel kuvatakse.
-        
-         <p>HTML-i põhiülesanded:</p>
-         <ul style="list-style-type: disc; margin-left: 20px;">
-         <li>Määrata, mis tüüpi sisu on (nt
-         pealkiri, lõik, link, pilt).</li>
-         <li>Struktureerida sisu loogiliselt (nt
-        päised, jalused, sektsioonid).</li>
-         </ul>
+      <div style="height: 100px;"></div> 
+
+       <div class="image-links">
+          <a
+            href="https://unsplash.com/photos/a-vase-filled-with-pink-flowers-on-top-of-a-table-5soAUDDnS74"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1716335024740-5fec88af5a05?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Pink flowers in vase"
+            /> </a
+          ><a
+            href="https://unsplash.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx
+    waG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Unsplash example"
+              loading="lazy"
+            />
+          </a>
         </div>
       </section>
 
-      <div style="height: 20px;"></div> 
+      <div style="height: 20px;"></div>
 
       <section id="kontakt">
         <img
@@ -205,7 +237,7 @@
           class="profile-pic"
         />
        <strong> <p class="username">Rebecca Toome</p> </strong>
-        <p>Tartu Rakendusliku Kolledzi õpilane</p>
+        <p>Tartu Rakendusliku Kolledži õpilane</p>
         <p>UX/UI disainer</p>
         <p>Telefon: +372 58367512</p>
         <p>E-mail: Rebecca.Toome@voco.ee</p>
