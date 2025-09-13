@@ -1,3 +1,18 @@
+
+main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; /* prevent horizontal scroll */
+}
+
 .navigatsioon a {
   display: inline-block; /* so margin works as expected */
   margin-right: 20px; /* horizontal spacing between links */
@@ -91,16 +106,24 @@ img {
   display: block;
 }
 
+
+.image-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: -300px; /* Adjust this as needed */
+  width: 100%;
+}
 .image-links img {
-  width: 400px !important;
-  max-width: 400px !important;
-  height: 0 auto !important;
-  margin-right: 10px !important;
-  display: inline-block !important;
-  flex-wrap: wrap !important;
-  gap: 10px !important;
-  object-fit: contain !important;
-  border-radius: 20% !important;
+  width: 400px;
+  max-width: 100%;
+  top: -180px;
+  right: -450px;
+  object-fit: contain;
+  border-radius: 20%;
+  position: relative;
+  z-index: 2;
 }
 a img {
   border: 0;
@@ -109,6 +132,7 @@ a img {
 a {
   text-decoration: none;
 }
+
 
 .video-container {
   position: relative;
@@ -134,10 +158,19 @@ a {
   height: 24px;
 }
 
-/* ID-selektor */
+
 #kontakt {
   background-color: #ffdddd;
+  width: 100vw !important;
+  padding: 20px 0 !important;
+  margin-top: -800px !important;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  /* margin-top: -20px; ← Use only if small gap remains */
 }
+
 
 /* Atribuudiselektor */
 a[target="_blank"] {
@@ -186,17 +219,23 @@ section {
 #Meedia.move-up {
   margin-top: 0px; /* or any value you want */
 }
+#CSS-alused.move-up {
+  margin-top: -50px; /* or any value you want */
+}
+#Kokkuvõte.move-up {
+  margin-top: 0px; /* or any value you want */
+}
 
 .position-wrapper {
   position: relative;
   height: 800px; /* make sure this is tall enough for both boxes */
 }
 
-/* First code box */
+/* Absolute positioned code boxes */
 .code-box-1 {
   position: absolute;
-  top: 2000px; /* adjust vertical position */
-  right: 50px; /* adjust horizontal position */
+  top: 2000px; /* manual vertical position */
+  right: 50px;
   width: 40%;
   font-size: 0.85rem;
   padding: 10px;
@@ -206,11 +245,10 @@ section {
   overflow-x: auto;
 }
 
-/* Second code box */
 .code-box-2 {
   position: absolute;
-  top: 2500px; /* lower than first box */
-  right: 30px; /* slightly different horizontal */
+  top: 2500px;
+  right: 30px;
   width: 40%;
   font-size: 0.85rem;
   padding: 10px;
@@ -219,11 +257,12 @@ section {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   overflow-x: auto;
 }
+
 .code-box-3 {
   position: absolute;
-  top: 3500px; /* Adjust this to be below the other boxes (e.g., 2200px or more) */
-  right: 20px; /* Same right alignment */
-  width: 40%; /* Same width */
+  top: 3000px;
+  right: 20px;
+  width: 40%;
   font-size: 0.85rem;
   background-color: #f4f4f4;
   border-radius: 6px;
@@ -231,4 +270,24 @@ section {
   overflow-x: auto;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
+}
+
+.code-box-4 {
+  position: absolute;
+  top: 3500px;
+  right: 50px;
+  width: 40%;
+  background-color: #f4f4f4;
+  border: 1px solid #bbb;
+  padding: 15px;
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 0.85rem;
+  overflow-x: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  margin: 0;
+  padding: 10px 0;
 }
