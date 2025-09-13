@@ -26,6 +26,8 @@
         <a href="#HTML õppevideo">HTML õppevideo</a>
         <a href="#Veebilehe-skelett">Veebilehe skelett</a>
         <a href="#Semantika-ja-navigeerimine">Semantika ja navigeerimine</a>
+        <a href="#Märgendkeeled-ja-stiililehed">Märgendkeeled ja stiililehed</a>
+        <a href="#Meedia">Meedia</a>
       </nav>
     </header>
 
@@ -202,6 +204,30 @@
 </div>
  </section>
 
+ <section>
+  <div class="code-box-1">
+    <h3>Näide</h3>
+    <pre><code>
+&lt;!doctype html&gt;
+&lt;html lang="et"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;title&gt;Õppeveeb&lt;/title&gt;
+    &lt;link rel="stylesheet" href="css/style.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;a href="#content" class="skip-link"&gt;Liigu sisu juurde&lt;/a&gt;
+    &lt;header&gt;&lt;h1&gt;Õppeveeb&lt;/h1&gt;&lt;/header&gt;
+    &lt;main id="content"&gt;&lt;p&gt;Tere tulemast!&lt;/p&gt;&lt;/main&gt;
+    &lt;footer&gt;© 2025&lt;/footer&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+  </div>
+</section>
+ 
+
 <section id="Semantika-ja-navigeerimine" class="move-up">
   <h2>Semantika ja navigeerimine</h2>
   <div class="wrap-text">
@@ -224,10 +250,139 @@
   </div>
 </section>
 
-  
+<section>
+  <div class="code-box-2">
+    <h3>Näide</h3>
+    <pre><code>
+&lt;header&gt;
+  &lt;nav aria-label="Põhinavigatsioon"&gt;
+    &lt;a href="#sissejuhatus"&gt;Sissejuhatus&lt;/a&gt;
+    &lt;a href="#teooria"&gt;Teooria&lt;/a&gt;
+    &lt;a href="#kontakt"&gt;Kontakt&lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+
+&lt;main&gt;
+  &lt;section id="sissejuhatus"&gt;
+    &lt;h2&gt;Sissejuhatus&lt;/h2&gt;
+    &lt;p&gt;Mis on HTML?&lt;/p&gt;
+  &lt;/section&gt;
+
+  &lt;section id="teooria"&gt;
+    &lt;h2&gt;Teooria&lt;/h2&gt;
+    &lt;p&gt;HTML tähendus.&lt;/p&gt;
+  &lt;/section&gt;
+&lt;/main&gt;
+    </code></pre>
+  </div>
+</section>
 
 
+<section id="Märgendkeeled-ja-stiililehed" class="move-up">
+  <h2>Märgendkeeled ja stiililehed</h2>
+  <div class="wrap-text">
+ <div style="height: 20px;"></div>
+  <p>Käsud:</p>
+<p><code>&lt;ls&gt;</code> - näitab mis kaustas sees on</p>
+<p><code>&lt;cd "kausta nimi"&gt;</code> - liigub kausta</p>
+<p><code>&lt;mkdir "kausta nimi"&gt;</code> - loob kausta</p>
+<p>Teekond:</p>
+    <p><code>&lt;cd Documents&gt;</code>
+    <p><code>&lt;cd omanimelinekaust&gt;</code>
+<p>Koodi kloonimine github'ist</p>
+     <p><code>&lt;git clone git@github.com....&gt;</code>
+<p>Terminalis projekti muudatuste üleslaadimine github'i</p>
+<p><code>&lt;git add .&gt;</code>
+<p><code>&lt;git commit -m "sõnum,mida sa muutsid"&gt;</code>
+<p><code>&lt;git push&gt;</code>
+<p>Muudatuste alla tõmbamine github'ist</p>
+<p><code>&lt;git pull&gt;</code>
        </section>
+
+<div style="height: 20px;"></div>
+
+<section id="Meedia" class="move-up">
+  <h2>Meedia</h2>
+  <div class="wrap-text">
+    <div style="height: 20px;"></div>
+    <p>Meedia (pildid, video, heli, SVG) on veebilehe oluline osa. Õige viis nende lisamiseks ja optimeerimiseks mõjutab nii kasutajakogemust kui ka lehe laadimiskiirust.</p>
+    <div style="height: 20px;"></div>
+
+    <p>Pildid.</p>
+    <p><code>&lt;img src="..." alt="..."&gt;</code> – kõige tavalisem viis pildi lisamiseks. Alt-tekst on kohustuslik ligipääsetavuse jaoks.</p>
+    <p><code>&lt;picture&gt; koos &lt;source&gt; elementidega</code> – võimaldab pakkuda erinevaid failiformaate (nt AVIF, WebP, JPG) ja ekraanisõltuvaid suurusi.</p>
+    <p><code>srcset ja sizes atribuudid &lt;img&gt; sees</code> – brauser valib sobiva suuruse vastavalt seadme ekraanilaiusele.</p>
+    <p>Pilt lingina: tee pilt klikitavaks, ümbritsedes <code>&lt;img&gt;</code> elemendi <code>&lt;a&gt;</code> tag’iga. Välislinkide puhul kasuta <code>target="_blank"</code> ja <code>rel="noopener noreferrer"</code>.</p>
+
+    <div style="height: 20px;"></div>
+    <p>Video.</p>
+    <p><code>&lt;video controls&gt;</code> – võimaldab manustada video otse lehele.</p>
+    <p><code>&lt;source&gt;</code> – mitme formaadi tugi (WebM, MP4).</p>
+    <p><code>&lt;track&gt;</code> – subtiitrid ja ligipääsetavus.</p>
+
+    <div style="height: 20px;"></div>
+    <p>Audio.</p>
+    <p><code>&lt;audio controls&gt;</code> – manustab heli.</p>
+    <p><code>&lt;source&gt;</code> – mitme formaadi tugi (mp3, ogg).</p>
+
+    <div style="height: 20px;"></div>
+    <p>SVG.</p>
+    <p><code>Inline: &lt;svg&gt;...&lt;/svg&gt; HTML-is</code> – saab muuta CSS-iga (värvid, suurus).</p>
+    <p><code>Failina: &lt;img src="logo.svg" alt="Logo"&gt;</code> – lihtsam, kuid piiratud stiilimise võimalused.</p>
+
+    <div style="height: 20px;"></div>
+    <p>Taustapilt</p>
+    <p><code>background-image: url("/shared-assets/images/examples/lizard.png");</code></p>
+    <p><code>Vaata mozilla developer ja w3school linke taustapiltide kohta.</code></p>
+
+    <div style="height: 20px;"></div>
+    <p>Vabavaraline meedia (uuendatud 2025).</p>
+    <p>Pildid: Unsplash, Pexels, Pixabay.</p>
+    <p>Videod: Pexels Video, Coverr.</p>
+    <p>Ikoonid/SVG: Heroicons, Font Awesome Free, SVGRepo.</p>
+    <p>Helid: Freesound, Mixkit.</p>
+  </div>
+</section>
+
+
+<section>
+  <div class="code-box-3">
+    <h3>Näide</h3>
+    <pre><code>
+&lt;!-- 1&#41; Hero pilt: picture + AVIF/WebP fallback (lokaalne assets/) --&gt;
+&lt;picture&gt;
+  &lt;source srcset="assets/img/hero.avif" type="image/avif"&gt;
+  &lt;source srcset="assets/img/hero.webp" type="image/webp"&gt;
+  &lt;img src="assets/img/hero.jpg" alt="Õppeveebi kangelaspilt" width="1200" height="600" fetchpriority="high"&gt;
+&lt;/picture&gt;
+
+&lt;!-- 2&#41; Kaardipilt: lihtne img + lazy loading (lokaalne assets/) --&gt;
+&lt;img src="assets/img/card-01.jpg" alt="Õppekaardi näidis" width="600" height="400" loading="lazy"&gt;
+
+&lt;!-- 3&#41; Välislink pildina (pilt on klikitav ja viib välisele saidile uues aknas) --&gt;
+&lt;a href="https://unsplash.com/" target="_blank" rel="noopener noreferrer"&gt;
+  &lt;img src="https://images.unsplash.com/photo-1503264116251-35a269479413" alt="Unsplash näidispilt" width="800" height="533" loading="lazy"&gt;
+&lt;/a&gt;
+
+&lt;!-- 4&#41; Pilt lingina oma saidi alamlehele (anker viitab meie enda lehele) --&gt;
+&lt;a href="galerii.html"&gt;
+  &lt;img src="assets/img/thumb-01.webp" alt="Ava galerii" width="400" height="300"&gt;
+&lt;/a&gt;
+
+&lt;!-- 5&#41; Inline SVG ikoon (saab CSS-iga värvida) --&gt;
+&lt;svg role="img" aria-labelledby="ic-title ic-desc" width="24" height="24" viewBox="0 0 24 24"&gt;
+  &lt;title id="ic-title"&gt;Info ikoon&lt;/title&gt;
+  &lt;desc id="ic-desc"&gt;Ringis i-täht&lt;/desc&gt;
+  &lt;circle cx="12" cy="12" r="10" fill="currentColor"/&gt;
+  &lt;text x="12" y="16" text-anchor="middle" font-size="12" fill="#0b1220"&gt;i&lt;/text&gt;
+&lt;/svg&gt;
+
+&lt;!-- 6&#41; Video mitme formaadi ja subtiitritega --&gt;
+&lt;video controls width="640" height="360"
+ </code></pre>
+ </div>
+</section>
+
 
       <div style="height: 100px;"></div> 
 

@@ -180,3 +180,55 @@ section {
 #Semantika-ja-navigeerimine.move-up {
   margin-top: 0px; /* or any value you want */
 }
+#Märgendkeeled-ja-stiililehed.move-up {
+  margin-top: 0px; /* or any value you want */
+}
+#Meedia.move-up {
+  margin-top: 0px; /* or any value you want */
+}
+
+.position-wrapper {
+  position: relative;
+  height: 800px; /* make sure this is tall enough for both boxes */
+}
+
+/* First code box */
+.code-box-1 {
+  position: absolute;
+  top: 2000px; /* adjust vertical position */
+  right: 50px; /* adjust horizontal position */
+  width: 40%;
+  font-size: 0.85rem;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+/* Second code box */
+.code-box-2 {
+  position: absolute;
+  top: 2500px; /* lower than first box */
+  right: 30px; /* slightly different horizontal */
+  width: 40%;
+  font-size: 0.85rem;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+.code-box-3 {
+  position: absolute;
+  top: 3500px; /* Adjust this to be below the other boxes (e.g., 2200px or more) */
+  right: 20px; /* Same right alignment */
+  width: 40%; /* Same width */
+  font-size: 0.85rem;
+  background-color: #f4f4f4;
+  border-radius: 6px;
+  padding: 10px;
+  overflow-x: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
