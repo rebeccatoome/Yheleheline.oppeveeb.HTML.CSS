@@ -4,6 +4,9 @@ main {
   padding: 0;
   display: flex;
   flex-direction: column;
+  transform: translateY(-600px); 
+  position: relative; /* keep it in normal flow */
+  z-index: 10; /* if needed to be on top */
 }
 
 html, body {
@@ -12,6 +15,27 @@ html, body {
   box-sizing: border-box;
   overflow-x: hidden; /* prevent horizontal scroll */
 }
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 10px;
+  background: #000;
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 100;
+  transition: top 0.3s ease;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.skip-link:focus,
+.skip-link:active {
+  top: 10px; /* Kui link on fookuses, tõsta nähtavale */
+  outline: 2px solid #fff;
+}
+
 
 .navigatsioon a {
   display: inline-block; /* so margin works as expected */
@@ -23,6 +47,26 @@ body {
   font-size: 20px;
   margin: 0%;
 }
+
+
+.round-wrapper {
+  width: 600px;
+  height: 600px;
+  top: 925px;
+  left: 1200px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+}
+
+.round-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 
 .wrap-text {
   width: 1000px; /* Set a width so wrapping can happen */
@@ -53,7 +97,7 @@ ul.circle {
 
 body,
 html {
-  overflow: auto;
+  overflow: visible;
 }
 
 .icon-row {
@@ -62,7 +106,7 @@ html {
   gap: 15px;
   padding: 10px 0;
   position: absolute;
-  top: 350px;
+  top: 660px;
   right: 10px;
 }
 .icon {
@@ -163,7 +207,7 @@ a {
   background-color: #ffdddd;
   width: 100vw !important;
   padding: 20px 0 !important;
-  margin-top: -800px !important;
+  margin-top: -600px !important;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -234,7 +278,7 @@ section {
 /* Absolute positioned code boxes */
 .code-box-1 {
   position: absolute;
-  top: 2000px; /* manual vertical position */
+  top: 2200px; /* manual vertical position */
   right: 50px;
   width: 40%;
   font-size: 0.85rem;
@@ -247,7 +291,7 @@ section {
 
 .code-box-2 {
   position: absolute;
-  top: 2500px;
+  top: 2700px;
   right: 30px;
   width: 40%;
   font-size: 0.85rem;
@@ -260,7 +304,7 @@ section {
 
 .code-box-3 {
   position: absolute;
-  top: 3000px;
+  top: 3750px;
   right: 20px;
   width: 40%;
   font-size: 0.85rem;
@@ -291,3 +335,11 @@ footer {
   margin: 0;
   padding: 10px 0;
 }
+
+.highlight {
+  background-color: rgb(192, 219, 192);
+  color: black;
+  display: inline;
+  padding: 5px;
+}
+
