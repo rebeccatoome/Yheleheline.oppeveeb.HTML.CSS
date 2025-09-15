@@ -40,7 +40,7 @@ html, body {
 
 .navigatsioon a {
   display: inline-block; /* so margin works as expected */
-  margin-right: 20px; /* horizontal spacing between links */
+  margin-right: 0px; /* horizontal spacing between links */
   padding: 5px 0; /* optional vertical padding */
 }
 
@@ -73,7 +73,7 @@ body {
 .round-wrapper {
   width: 600px;
   height: 600px;
-  top: 925px;
+  top: 900px;
   left: 1200px;
   border-radius: 50%;
   overflow: hidden;
@@ -155,13 +155,13 @@ img {
   height: 200px;
   border-radius: 50%;
   float: left;
-  margin-right: 10px;
+  margin-right: 50px;
   object-fit: cover;
   object-position: center top;
   transform: translateY(-50%);
   margin-right: 15px;
   z-index: 1000;
-  margin-top: 60px;
+  margin-top: 100px;
 }
 
 .hero-image {
@@ -227,7 +227,7 @@ a {
 #kontakt {
   background-color: #ffdddd;
   width: 100vw !important;
-  padding: 20px 0 !important;
+  padding: 0px 0 !important;
   margin-top: -600px !important;
   position: relative;
   left: 50%;
@@ -299,7 +299,7 @@ section {
 /* Absolute positioned code boxes */
 .code-box-1 {
   position: absolute;
-  top: 2400px; /* manual vertical position */
+  top: 2600px; /* manual vertical position */
   right: 50px;
   width: 40%;
   font-size: 0.85rem;
@@ -312,7 +312,7 @@ section {
 
 .code-box-2 {
   position: absolute;
-  top: 3000px;
+  top: 3100px;
   right: 30px;
   width: 40%;
   font-size: 0.85rem;
@@ -325,7 +325,7 @@ section {
 
 .code-box-3 {
   position: absolute;
-  top: 3900px;
+  top: 4100px;
   right: 20px;
   width: 40%;
   font-size: 0.85rem;
