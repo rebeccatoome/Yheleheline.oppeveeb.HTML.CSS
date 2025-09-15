@@ -46,7 +46,7 @@ html, body {
 
 .nav_stiil {
 display: flex;
-gap: 40px;
+gap: 0px;
 font-size: 20px;
 }
 
@@ -59,8 +59,8 @@ transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .nav_stiil a:hover {
-background-color: #000;
-color: rgb(255, 255, 255);
+background-color: #ffd0d0;
+color: rgb(44, 17, 17);
 }
 
 
@@ -122,13 +122,13 @@ html {
 }
 
 .icon-row {
-  background-color: rgb(255, 255, 255);
+  background-color: transparent;
   display: flex;
-  gap: 15px;
+  gap: 10px;
   padding: 10px 0;
   position: absolute;
-  top: 730px;
-  right: 10px;
+  top: 735px;
+  right: 5px;
 }
 .icon {
   width: 24px;
