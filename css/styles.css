@@ -153,7 +153,7 @@ img {
 .profile-pic {
   width: 200px;
   height: 200px;
-  border-radius: 10%;
+  border-radius: 50%;
   float: left;
   margin-right: 50px;
   object-fit: cover;
@@ -169,6 +169,7 @@ img {
   height: 300px;
   object-fit: cover;
   display: block;
+  margin-bottom: 0;
 }
 
 
@@ -226,14 +227,12 @@ a {
 
 #kontakt {
   background-color: #ffdddd;
-  width: 100vw !important;
-  padding: 0px 0 !important;
-  margin-top: -600px !important;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-top: -680px;
+  padding-top: 20px;
   box-sizing: border-box;
-  /* margin-top: -20px; ← Use only if small gap remains */
 }
 
 
@@ -355,6 +354,7 @@ section {
 footer {
   margin: 0;
   padding: 10px 0;
+  height: auto;
 }
 
 .highlight {
